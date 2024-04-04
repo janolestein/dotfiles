@@ -51,6 +51,7 @@ M.mason = {
     "pyright",
     "r-languageserver",
     "json-lsp",
+    "black",
   },
 }
 

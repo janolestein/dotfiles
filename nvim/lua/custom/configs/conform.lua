@@ -12,6 +12,8 @@ local options = {
 		sh = { "shfmt" },
 
     go = { "gofmt"},
+
+    python = { "black"},
 	},
 
   -- adding same formatter for multiple filetypes can look too much work for some
