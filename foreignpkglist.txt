@@ -1,0 +1,6 @@
+bomi-git
+hyprlock-git
+logiops
+nwg-look-bin
+wlogout
+yay
