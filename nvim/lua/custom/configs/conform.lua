@@ -1,4 +1,4 @@
---type conform.options
+- type conform.options
 local options = {
 	lsp_fallback = true,
 

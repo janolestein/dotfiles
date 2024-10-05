@@ -17,6 +17,9 @@ opt.cursorline = true
 
 vim.wo.relativenumber = true
 
+vim.opt.spelllang = 'de'
+vim.opt.spell = true
+
 
 -- Indenting
 opt.expandtab = true
