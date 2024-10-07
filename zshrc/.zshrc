@@ -70,3 +70,10 @@ alias open='xdg-open'
 eval "$(fzf --zsh)"
 eval "$(zoxide init --cmd cd zsh)"
 
+fzp() {
+fzf --preview "bat --style=numbers --color=always --line-range :500 {}"
+}
+
+
+# Created by `pipx` on 2024-07-09 21:17:28
+export PATH="$PATH:/home/jole/.local/bin"
