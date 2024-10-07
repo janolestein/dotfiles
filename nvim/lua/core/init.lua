@@ -16,17 +16,14 @@ opt.clipboard = "unnamedplus"
 opt.cursorline = true
 
 vim.wo.relativenumber = true
-
-vim.opt.spelllang = 'de'
-vim.opt.spell = true
-
+opt.scrolloff = 16
 
 -- Indenting
 opt.expandtab = true
 opt.shiftwidth = 4
 opt.smartindent = true
 opt.tabstop = 4
-opt.softtabstop = 2
+opt.softtabstop = 4
 
 opt.fillchars = { eob = " " }
 opt.ignorecase = true

@@ -20,5 +20,14 @@ M.general = {
 }
 
 -- more keybinds!
+M.undotree = {
+  n = {
+    ["<leader>tu"] = {
+      "<cmd> UndotreeToggle <CR>",
+      "Toggle undotree"
+    }
+  }
+}
 
+require "core.utils".load_mappings("undotree")
 return M
