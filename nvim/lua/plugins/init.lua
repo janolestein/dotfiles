@@ -296,6 +296,22 @@ local default_plugins = {
 			require("which-key").setup(opts)
 		end,
 	},
+	{
+		"ellisonleao/glow.nvim",
+		config = true,
+		cmd = "Glow",
+		keys = {
+			{ "<leader>gl", "<cmd>Glow<cr>", desc = "Glow" },
+		},
+	},
+	{
+		"MeanderingProgrammer/render-markdown.nvim",
+		opts = {},
+		dependencies = { "nvim-treesitter/nvim-treesitter", "echasnovski/mini.nvim" }, -- if you use the mini.nvim suite
+		-- dependencies = { 'nvim-treesitter/nvim-treesitter', 'echasnovski/mini.icons' }, -- if you use standalone mini plugins
+		-- dependencies = { 'nvim-treesitter/nvim-treesitter', 'nvim-tree/nvim-web-devicons' }, -- if you prefer nvim-web-devicons
+		ft = { "markdown" },
+	},
 }
 
 local config = require("core.utils").load_config()

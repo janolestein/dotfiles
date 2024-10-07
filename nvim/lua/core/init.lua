@@ -14,7 +14,8 @@ opt.showmode = false
 
 opt.clipboard = "unnamedplus"
 opt.cursorline = true
-
+vim.opt.spelllang = 'de'
+vim.opt.spell = true
 vim.wo.relativenumber = true
 opt.scrolloff = 16
 
