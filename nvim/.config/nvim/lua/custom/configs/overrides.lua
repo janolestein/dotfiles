@@ -49,7 +49,6 @@ M.mason = {
     "gopls",
     "rust-analyzer",
     "pyright",
-    "r-languageserver",
     "json-lsp",
     "black",
   },
