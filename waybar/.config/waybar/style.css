@@ -57,6 +57,7 @@ tooltip {
 #disk,
 #temperature,
 #custom-power,
+#custom-temp,
 #custom-weather {
   background-color: rgba(22, 25, 37, 0.9);
   color: #f9e2af;
@@ -124,6 +125,11 @@ tooltip {
 #custom-weather{
   margin-right: 15px;
   color: #dd7878;
+}
+
+#custom-temp{
+  margin-right: 15px;
+  color: #179299;
 }
 
 #cpu{

@@ -22,6 +22,7 @@
         "pulseaudio#microphone",
         "clock",
         "custom/weather",
+        "custom/temp",
         "custom/power"
     ],
 
@@ -102,6 +103,14 @@
         "tooltip": true,
         "restart-interval": 300,
         "exec": "$HOME/.config/waybar/scripts/waybar-wttr.py",
+        "return-type": "json"
+      },
+    "custom/temp": {
+        "format": "{}",
+        "on-click": "wpaperd",
+        "tooltip": false,
+        "restart-interval": 1200,
+        "exec": "$HOME/projects/iot/waybarScript.py",
         "return-type": "json"
       },
     "custom/power": {
