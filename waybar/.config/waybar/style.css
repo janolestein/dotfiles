@@ -1,34 +1,49 @@
 * {
-    border: none;
-    border-radius: 0;
-    font-family: CaskaydiaCove Nerd Font, monospace;
-    font-weight: bold;
-    font-size: 14px;
-    min-height: 0;
+  border: none;
+  border-radius: 0;
+  font-family:
+    CaskaydiaCove Nerd Font,
+    monospace;
+  font-weight: bold;
+  font-size: 14px;
+  min-height: 0;
 }
 #waybar {
   background: transparent;
   color: #cdd6f4;
 }
 
-
-tooltip {
-    background: #1e1e2e;
-    border-radius: 10px;
-    border-width: 2px;
-    border-style: solid;
-    border-color: #11111b;
-}
-
-#workspaces {
-  padding: 0px;
+.modules-center {
+  background: rgba(0, 0, 8, 0.7);
+  padding: 0 5px;
+  border-radius: 15px;
   margin-top: 10px;
-  border-radius: 16px;
-  font-weight: bold;
+}
+tooltip {
+  background: #1e1e2e;
+  border-radius: 10px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #11111b;
 }
 
+/* #workspaces { */
+/*   border-radius: 10px; */
+/*   margin-left: 10px; */
+/*   padding-right: 0px; */
+/*   padding-left: 5px; */
+/*   padding: 0px; */
+/*   margin-top: 10px; */
+/*   border-radius: 16px; */
+/*   font-weight: bold; */
+/* } */
 
 #workspaces button {
+  font-weight: 900;
+  font-size: 20pt;
+  color: #c0caf5;
+  border: none;
+  border-radius: 15px;
   padding: 0px;
   margin: 0px;
   /*transition: all 0.5s cubic-bezier(0.33, 1.0, 0.68, 1.0); easeInOutCubic */
@@ -44,7 +59,6 @@ tooltip {
 #workspaces button:hover {
   background-color: #cba6f7;
 }
-
 
 #window,
 #tray,
@@ -66,54 +80,41 @@ tooltip {
 
   box-shadow: rgba(0, 0, 0, 0.116) 2px 2px 5px 2px;
   margin-top: 10px;
-
 }
 
 #tray {
-    border-radius: 10px;
-    margin-right: 10px;
+  border-radius: 10px;
+  margin-right: 10px;
 }
-
-#workspaces {
-    background: #1e1e2e;
-    border-radius: 10px;
-    margin-left: 10px;
-    padding-right: 0px;
-    padding-left: 5px;
-}
-
-
 
 #window {
-    border-radius: 10px;
-    margin-left: 60px;
-    margin-right: 60px;
+  border-radius: 10px;
+  margin-left: 60px;
+  margin-right: 60px;
 }
 
 #clock {
-    color: #ea76cb;
-    margin-left: 15px;
-    margin-right: 15px;
+  color: #ea76cb;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
-
-
-#pulseaudio{
-    color: #ea76cb;
-    border-left: 0px;
-    border-right: 0px;
-    border-radius: 0px;
-    border-top-left-radius: 16px;
-    border-bottom-left-radius: 16px;
+#pulseaudio {
+  color: #ea76cb;
+  border-left: 0px;
+  border-right: 0px;
+  border-radius: 0px;
+  border-top-left-radius: 16px;
+  border-bottom-left-radius: 16px;
 }
 
-#pulseaudio.microphone{
-    color: #89b4fa;
-    border-left: 0px;
-    border-right: 0px;
-    border-radius: 0px;
-    border-top-right-radius: 16px;
-    border-bottom-right-radius: 16px;
+#pulseaudio.microphone {
+  color: #89b4fa;
+  border-left: 0px;
+  border-right: 0px;
+  border-radius: 0px;
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
 }
 
 #custom-power {
@@ -122,34 +123,39 @@ tooltip {
   margin-right: 15px;
 }
 
-#custom-weather{
+#custom-weather {
   margin-right: 15px;
   color: #dd7878;
 }
 
-#custom-temp{
+#custom-temp {
   margin-right: 15px;
   color: #179299;
 }
 
-#cpu{
+#cpu {
   margin-left: 15px;
   border-top-right-radius: 0px;
   border-bottom-right-radius: 0px;
   color: #179299;
 }
 
-#memory{
+#memory {
   border-radius: 0px;
   color: #ea76cb;
 }
 
-#disk{
+#disk {
   border-top-left-radius: 0px;
   border-bottom-left-radius: 0px;
   color: #dc8a78;
 }
-
-
-
-
+#custom-arch {
+  margin-left: 5px;
+  padding: 0 10px;
+  font-size: 20px;
+  transition: color 0.5s;
+}
+#custom-arch:hover {
+  color: #1793d1;
+}
