@@ -1,5 +1,7 @@
-theme = tokyonight
+theme = TokyoNight
 font-size = 13
-font-family = CaskaydiaCove Nerd Font
-window-decoration = false
+font-family = CaskaydiaCove Nerd Font Mono
+window-decoration = true
 background-opacity = 0.8
+background-blur = true
+confirm-close-surface=false

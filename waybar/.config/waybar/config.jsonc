@@ -4,8 +4,8 @@
   "mod": "dock",
   "exclusive": true,
   "passthrough": false,
+  "height": 10,
   "gtk-layer-shell": true,
-  "height": 0,
   "modules-left": ["cpu", "memory", "disk"],
   "modules-center": ["custom/arch", "hyprland/workspaces"],
   "modules-right": [
@@ -25,10 +25,10 @@
   "hyprland/workspaces": {
     "disable-scroll": false,
     "all-outputs": false,
-    "on-scroll-up": "hyprctl dispatch workspace -1",
-    "on-scroll-down": "hyprctl dispatch workspace +1",
+    "on-scroll-up": "hyprctl dispatch 'hl.dsp.focus({ workspace = \"m-1\" })'",
+    "on-scroll-down": "hyprctl dispatch 'hl.dsp.focus({ workspace = \"m+1\" })'",
     "format": "{name}", // {icon}
-    // "on-click": "activate",
+    "on-click": "activate",
     "format-icons": {
       "urgent": "󰗖",
       "active": "󰝥",
@@ -71,7 +71,7 @@
     "format": "󰌢 {usage}%",
     "tooltip": false,
     "on-click": "missioncenter",
-    "on-click-right": "kitty --class wm-floating --title all_is_kitty --hold --detach sh -c 'btop'",
+    "on-click-right": "ghostty -e 'btop'",
   },
   "memory": {
     "interval": 5,
