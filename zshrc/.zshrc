@@ -144,3 +144,5 @@ fzfp() {
 # ══════════════════════════════════════════════════════════════════════════════
 eval "$(zoxide init zsh --cmd cd)"
 eval "$(starship init zsh)"
+
+export PATH="$HOME/.local/bin:$PATH"
